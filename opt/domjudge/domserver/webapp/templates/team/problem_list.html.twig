@@ -1,0 +1,25 @@
+{% extends "team/base.html.twig" %}
+
+{% block title %}Contest problems - {{ parent() }}{% endblock %}
+
+{% block content %}
+ {% set problem_text_path = 'team_problem_text'%}
+
+{% if problem_text_path is null %}
+
+    Problem text has unknown type
+
+{% else %}
+
+    
+{% endif %}   
+    {{problem.probid}}
+
+<script type="text/javascript" language="javascript"> 
+    $('#mainframe').css('height', $(window).height()+'px');
+</script>
+
+
+
+{% endblock %}
+

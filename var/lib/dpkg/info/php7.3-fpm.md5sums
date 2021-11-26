@@ -1,0 +1,10 @@
+a4d3e49c5ccd3a085504c8f40d1a5ea1  lib/systemd/system/php7.3-fpm.service
+d41d8cd98f00b204e9800998ecf8427e  usr/lib/php/7.3/sapi/fpm
+355289b2653a9fb80191c9fe74174a88  usr/lib/php/php7.3-fpm-reopenlogs
+8c7b32bfef687d5bce5972328dda3323  usr/lib/tmpfiles.d/php7.3-fpm.conf
+d8f50ffdd70f46beaf196ab8cd2722de  usr/sbin/php-fpm7.3
+5c4fdd1a55e80a29728b04fbd359b75a  usr/share/bug/php7.3-fpm/control
+ffb56f5682ed8567810e325683f4079b  usr/share/bug/php7.3-fpm/script
+be24c9d40b776e39f20a1f77ef5ef69e  usr/share/lintian/overrides/php7.3-fpm
+9999684fc185f09cdf82aea500a3e29c  usr/share/man/man8/php-fpm7.3.8.gz
+b72576b7ba102000e6af9969bec20bf9  usr/share/php/7.3/fpm/status.html

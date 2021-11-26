@@ -1,0 +1,5 @@
+38fea5e6603927e4779acc698ec1f8a4  usr/lib/php/20180731/ldap.so
+eeca831ab6affd2212f003519bec973b  usr/share/bug/php7.3-ldap/control
+25adbfe0afc285cf249b77e2468e3d72  usr/share/bug/php7.3-ldap/script
+4eb0e331207db1200dcd2ac08b0e1eb0  usr/share/lintian/overrides/php7.3-ldap
+90aa90a399f9cc0f6cb76d0e4af6a2cf  usr/share/php7.3-ldap/ldap/ldap.ini

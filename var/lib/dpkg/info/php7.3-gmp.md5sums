@@ -1,0 +1,5 @@
+1259b50e4a8b4b13a1aff7adb5fd4ac3  usr/lib/php/20180731/gmp.so
+eeca831ab6affd2212f003519bec973b  usr/share/bug/php7.3-gmp/control
+b376edf22bee1e5797897c5f3909e5d5  usr/share/bug/php7.3-gmp/script
+12540a3f3512c9c994cec9432d918be0  usr/share/lintian/overrides/php7.3-gmp
+065a390ee70a96b599ab366fb23192ec  usr/share/php7.3-gmp/gmp/gmp.ini

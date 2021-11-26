@@ -1,0 +1,4 @@
+/usr/lib/mime/packages mime-support/noawait
+/usr/share/applications mime-support/noawait
+/etc/php/7.3/cli/conf.d php7.3-cli/noawait
+/etc/php/7.3/fpm/conf.d php7.3-fpm/noawait

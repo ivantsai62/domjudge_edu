@@ -1,0 +1,10 @@
+update-alternatives 2020-02-19 07:43:42: run with --install /etc/mysql/my.cnf my.cnf /etc/mysql/my.cnf.fallback 100
+update-alternatives 2020-02-19 07:43:42: link group my.cnf updated to point to /etc/mysql/my.cnf.fallback
+update-alternatives 2020-02-19 07:43:43: run with --install /etc/mysql/my.cnf my.cnf /etc/mysql/mariadb.cnf 200
+update-alternatives 2020-02-19 07:43:43: link group my.cnf updated to point to /etc/mysql/mariadb.cnf
+update-alternatives 2020-02-19 07:43:52: run with --install /usr/bin/php php /usr/bin/php7.3 73 --slave /usr/share/man/man1/php.1.gz php.1.gz /usr/share/man/man1/php7.3.1.gz
+update-alternatives 2020-02-19 07:43:52: link group php updated to point to /usr/bin/php7.3
+update-alternatives 2020-02-19 07:43:52: run with --install /usr/bin/phar phar /usr/bin/phar7.3 73 --slave /usr/share/man/man1/phar.1.gz phar.1.gz /usr/share/man/man1/phar7.3.1.gz
+update-alternatives 2020-02-19 07:43:52: link group phar updated to point to /usr/bin/phar7.3
+update-alternatives 2020-02-19 07:43:52: run with --install /usr/bin/phar.phar phar.phar /usr/bin/phar.phar7.3 73 --slave /usr/share/man/man1/phar.phar.1.gz phar.phar.1.gz /usr/share/man/man1/phar.phar7.3.1.gz
+update-alternatives 2020-02-19 07:43:52: link group phar.phar updated to point to /usr/bin/phar.phar7.3

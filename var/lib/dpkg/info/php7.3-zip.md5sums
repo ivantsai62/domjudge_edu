@@ -1,0 +1,5 @@
+7fac566ba294f6499e8b73b9a04e979a  usr/lib/php/20180731/zip.so
+eeca831ab6affd2212f003519bec973b  usr/share/bug/php7.3-zip/control
+cb8b055a56003dae32cb80116070db58  usr/share/bug/php7.3-zip/script
+bff6641d8f26c57ff3d74c65ea14a17a  usr/share/lintian/overrides/php7.3-zip
+c46baba51984fb09217d9c7fab433e89  usr/share/php7.3-zip/zip/zip.ini

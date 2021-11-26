@@ -1,0 +1,37 @@
+{% extends 'team/base.html.twig' %}
+
+{% block title %}{{ team.name }} - {{ parent() }}{% endblock %}
+
+
+
+{% block messages %}{% endblock %}
+{% block content %}
+
+
+{% endblock %}
+
+{% block extrafooter %}
+    <script>
+        var $flash = null;
+
+        function saveFlash() {
+            $flash = $('[data-flash-messages]').children();
+        }
+
+        function setFlashAndProgress() {
+            var $newProgress = $('[data-ajax-refresh-target] > [data-progress-bar]');
+            if ($newProgress.length) {
+                var $oldProgress = $('body > [data-progress-bar]');
+                $oldProgress.html($newProgress.children());
+                $newProgress.remove();
+            }
+
+            $('[data-flash-messages]').html($flash);
+        }
+
+        function markSeen($elem) {
+            $elem.closest('tr').removeClass('unseen');
+        }
+    </script>
+    {% include 'team/partials/compiler_content.html.twig' %}
+{% endblock %}

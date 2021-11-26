@@ -1,0 +1,84 @@
+{% extends "team/base.html.twig" %}
+
+{% block title %}Contest problems - {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+      
+
+{% if contest == NULL %}
+<h1 class="mt-4 text-left">No Contest now</h1>
+
+{% else %}
+
+<h1 class="mt-4 text-left">Problem list - {{ contest.name }}  </h1>
+
+
+<div class="table-wrapper">
+
+    <table class="data-table table table-sm table-striped table-borderexited" style="width:auto">
+    
+    <thead class="">
+    
+
+        
+        <tr>
+            <th scope="col">#</th>
+            <th> Problem Name </th>
+            <th> Time Limit </th> 
+            <th> Memory Limit </th>
+            <th> Restriction Languages </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        
+        {% set num_group = 0 %}
+        
+            {% for row in problems|batch(1, []) %}
+            {% for problemData in row %}
+                              
+                                    {% if problemData is empty %}
+                                        <div class="card" style="border: none;"></div>
+                                    {% else %}
+                                        {% set problem = problemData.0 %}
+          
+        
+        <tr>
+            <td width = "5%">
+                 <a href="/public/problems/{{problem.problem.probid}}/text" target="_blank" style="text-decoration:none; color:black">
+
+                 {{ problem.problem.probid }}</a></td>
+                
+            <td width="30%">
+                <a href="/team/problem_list/{{problem.problem.probid}}" target="_blank" style="text-decoration:none;">
+                
+                 {{problem.problem.name }}</a></td>
+
+            <td>{{ problem.problem.timelimit }}</td>
+
+            <td>{{ problem.problem.memlimit }}</td>
+            
+            <td>{{ problem.problem.restrictionlanguages|join(', ') }}</td>
+
+            <td>
+            {% if problem.problem.problemsgroup != null %} 
+        
+            {{ problem.problem.problemsgroup|join(', ')|raw }}
+            {% endif %}
+            </td>
+          
+            
+        </tr>
+           
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+         
+    </tbody>
+
+
+{% endif %}
+    
+{% endblock %}
