@@ -16,6 +16,6 @@ if (!\class_exists(srcApp_KernelProdContainer::class, false)) {
 
 return new \ContainerSDM2tIz\srcApp_KernelProdContainer([
     'container.build_hash' => 'SDM2tIz',
-    'container.build_id' => 'f43e5909',
-    'container.build_time' => 1637146418,
+    'container.build_id' => 'cb0e2bb0',
+    'container.build_time' => 1637922790,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerSDM2tIz');

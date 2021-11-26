@@ -111,11 +111,7 @@
                                     {%- for v in item.value -%}
                                     {{- v -}} <br>
                                     {%- endfor -%}
-                                    {#新增內容 若key=problems_group其item.value 為 array 需將其中的值印出 #}
-                                    {% elseif key == "problems_group" %}
-                                    {%- for k in item.value -%}
-                                    {{- k -}} <br>
-                                    {%- endfor -%}
+                                    
 
 
 

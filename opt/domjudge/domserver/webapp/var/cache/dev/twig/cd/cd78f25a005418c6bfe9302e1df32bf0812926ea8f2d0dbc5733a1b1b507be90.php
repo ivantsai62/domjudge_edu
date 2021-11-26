@@ -52,7 +52,7 @@ class __TwigTemplate_8463272338f4149c7ce628326e30e254799a4828a3839db1463180394f1
         // line 57
         echo "
 ";
-        // line 178
+        // line 174
         echo "
 ";
         
@@ -453,33 +453,19 @@ $context["row"], "link", [], "any", true, true, false, 102)) {
                         $_parent = $context['_parent'];
                         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['v'], $context['_parent'], $context['loop']);
                         $context = array_intersect_key($context, $_parent) + $_parent;
-                        // line 115
-                        echo "                                    ";
-                    } elseif (($context["key"] == "problems_group")) {
-                        // line 116
-                        $context['_parent'] = $context;
-                        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 116, $this->source); })()), "value", [], "any", false, false, false, 116));
-                        foreach ($context['_seq'] as $context["_key"] => $context["k"]) {
-                            // line 117
-                            echo twig_escape_filter($this->env, $context["k"], "html", null, true);
-                            echo "<br>";
-                        }
-                        $_parent = $context['_parent'];
-                        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['k'], $context['_parent'], $context['loop']);
-                        $context = array_intersect_key($context, $_parent) + $_parent;
                     } else {
-                        // line 124
-                        echo ((twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "value", [], "any", true, true, false, 124)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "value", [], "any", false, false, false, 124), ((twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "default", [], "any", true, true, false, 124)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "default", [], "any", false, false, false, 124), "")) : ("")))) : (((twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "default", [], "any", true, true, false, 124)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "default", [], "any", false, false, false, 124), "")) : (""))));
+                        // line 120
+                        echo ((twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "value", [], "any", true, true, false, 120)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "value", [], "any", false, false, false, 120), ((twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "default", [], "any", true, true, false, 120)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "default", [], "any", false, false, false, 120), "")) : ("")))) : (((twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "default", [], "any", true, true, false, 120)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "default", [], "any", false, false, false, 120), "")) : (""))));
                     }
-                    // line 129
-                    if ((twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "link", [], "any", true, true, false, 129) || twig_get_attribute($this->env, $this->source, $context["row"], "link", [], "any", true, true, false, 129))) {
+                    // line 125
+                    if ((twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "link", [], "any", true, true, false, 125) || twig_get_attribute($this->env, $this->source, $context["row"], "link", [], "any", true, true, false, 125))) {
                         echo "</a>";
                     }
-                    // line 130
-                    if ((twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "link", [], "any", true, true, false, 130) || twig_get_attribute($this->env, $this->source, $context["row"], "link", [], "any", true, true, false, 130))) {
+                    // line 126
+                    if ((twig_get_attribute($this->env, $this->source, ($context["item"] ?? null), "link", [], "any", true, true, false, 126) || twig_get_attribute($this->env, $this->source, $context["row"], "link", [], "any", true, true, false, 126))) {
                         echo "</a>";
                     }
-                    // line 131
+                    // line 127
                     echo "                                    
                                 
 
@@ -489,48 +475,48 @@ $context["row"], "link", [], "any", true, true, false, 102)) {
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['key'], $context['column'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 137
+                // line 133
                 $context['_parent'] = $context;
-                $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["row"], "actions", [], "any", false, false, false, 137));
+                $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["row"], "actions", [], "any", false, false, false, 133));
                 foreach ($context['_seq'] as $context["_key"] => $context["action"]) {
-                    // line 138
+                    // line 134
                     echo "                
                         <td>";
-                    // line 140
+                    // line 136
                     if ($context["action"]) {
-                        // line 141
+                        // line 137
                         echo "
                                 <a href=\"";
-                        // line 142
-                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["action"], "link", [], "any", false, false, false, 142), "html", null, true);
+                        // line 138
+                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["action"], "link", [], "any", false, false, false, 138), "html", null, true);
                         echo "\" title=\"";
-                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["action"], "title", [], "any", false, false, false, 142), "html", null, true);
+                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["action"], "title", [], "any", false, false, false, 138), "html", null, true);
                         echo "\" ";
-                        if ((twig_get_attribute($this->env, $this->source, $context["action"], "ajaxModal", [], "any", true, true, false, 142) && twig_get_attribute($this->env, $this->source, $context["action"], "ajaxModal", [], "any", false, false, false, 142))) {
+                        if ((twig_get_attribute($this->env, $this->source, $context["action"], "ajaxModal", [], "any", true, true, false, 138) && twig_get_attribute($this->env, $this->source, $context["action"], "ajaxModal", [], "any", false, false, false, 138))) {
                             echo "data-ajax-modal";
                         }
                         echo ">
                                     <i class=\"fas fa-";
-                        // line 143
-                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["action"], "icon", [], "any", false, false, false, 143), "html", null, true);
+                        // line 139
+                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["action"], "icon", [], "any", false, false, false, 139), "html", null, true);
                         echo "\"></i>
                                 </a>";
                     }
-                    // line 146
+                    // line 142
                     echo "
                         </td>";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['action'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 149
+                // line 145
                 echo "
                 </tr>";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['row'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 152
+            // line 148
             echo "
             </tbody>
         </table>
@@ -540,18 +526,18 @@ $context["row"], "link", [], "any", true, true, false, 102)) {
             \$('.data-table').DataTable({
                 \"paging\": false,
                 \"searching\": ";
-            // line 160
-            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, ($context["options"] ?? null), "searching", [], "any", true, true, false, 160)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, ($context["options"] ?? null), "searching", [], "any", false, false, false, 160), "true")) : ("true")), "html", null, true);
+            // line 156
+            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, ($context["options"] ?? null), "searching", [], "any", true, true, false, 156)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, ($context["options"] ?? null), "searching", [], "any", false, false, false, 156), "true")) : ("true")), "html", null, true);
             echo ",
                 \"ordering\": ";
-            // line 161
-            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, ($context["options"] ?? null), "ordering", [], "any", true, true, false, 161)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, ($context["options"] ?? null), "ordering", [], "any", false, false, false, 161), "true")) : ("true")), "html", null, true);
+            // line 157
+            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, ($context["options"] ?? null), "ordering", [], "any", true, true, false, 157)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, ($context["options"] ?? null), "ordering", [], "any", false, false, false, 157), "true")) : ("true")), "html", null, true);
             echo ",
                 \"order\": [[ ";
-            // line 162
-            echo twig_escape_filter($this->env, (isset($context["default_sort"]) || array_key_exists("default_sort", $context) ? $context["default_sort"] : (function () { throw new RuntimeError('Variable "default_sort" does not exist.', 162, $this->source); })()), "html", null, true);
+            // line 158
+            echo twig_escape_filter($this->env, (isset($context["default_sort"]) || array_key_exists("default_sort", $context) ? $context["default_sort"] : (function () { throw new RuntimeError('Variable "default_sort" does not exist.', 158, $this->source); })()), "html", null, true);
             echo ", '";
-            echo twig_escape_filter($this->env, (isset($context["default_sort_order"]) || array_key_exists("default_sort_order", $context) ? $context["default_sort_order"] : (function () { throw new RuntimeError('Variable "default_sort_order" does not exist.', 162, $this->source); })()), "html", null, true);
+            echo twig_escape_filter($this->env, (isset($context["default_sort_order"]) || array_key_exists("default_sort_order", $context) ? $context["default_sort_order"] : (function () { throw new RuntimeError('Variable "default_sort_order" does not exist.', 158, $this->source); })()), "html", null, true);
             echo "']],
                 \"info\": false,
                 \"autoWidth\": true,
@@ -581,7 +567,7 @@ $context["row"], "link", [], "any", true, true, false, 102)) {
         }
     }
 
-    // line 179
+    // line 175
     public function macro_collection_scripts(...$__varargs__)
     {
         $macros = $this->macros;
@@ -599,7 +585,7 @@ $context["row"], "link", [], "any", true, true, false, 102)) {
             $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
             $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "macro", "collection_scripts"));
 
-            // line 180
+            // line 176
             echo "    <script>
         var \$collectionHolder;
 
@@ -658,7 +644,7 @@ $context["row"], "link", [], "any", true, true, false, 102)) {
 
     public function getDebugInfo()
     {
-        return array (  603 => 180,  585 => 179,  552 => 162,  548 => 161,  544 => 160,  534 => 152,  527 => 149,  520 => 146,  515 => 143,  505 => 142,  502 => 141,  500 => 140,  497 => 138,  493 => 137,  483 => 131,  479 => 130,  475 => 129,  472 => 124,  464 => 117,  460 => 116,  457 => 115,  450 => 112,  446 => 111,  443 => 110,  441 => 109,  439 => 108,  437 => 105,  435 => 104,  432 => 103,  426 => 102,  421 => 101,  414 => 100,  408 => 99,  401 => 98,  398 => 97,  396 => 96,  392 => 94,  385 => 93,  382 => 92,  379 => 91,  375 => 90,  370 => 86,  362 => 82,  358 => 81,  356 => 80,  342 => 78,  340 => 77,  335 => 76,  331 => 75,  328 => 73,  324 => 70,  322 => 69,  320 => 68,  318 => 67,  301 => 66,  299 => 65,  297 => 64,  291 => 59,  269 => 58,  227 => 30,  223 => 29,  219 => 28,  216 => 27,  198 => 26,  180 => 23,  162 => 22,  145 => 18,  141 => 17,  138 => 16,  120 => 15,  96 => 5,  92 => 4,  88 => 3,  85 => 2,  67 => 1,  56 => 178,  53 => 57,  50 => 25,  46 => 20,  43 => 14,);
+        return array (  589 => 176,  571 => 175,  538 => 158,  534 => 157,  530 => 156,  520 => 148,  513 => 145,  506 => 142,  501 => 139,  491 => 138,  488 => 137,  486 => 136,  483 => 134,  479 => 133,  469 => 127,  465 => 126,  461 => 125,  458 => 120,  450 => 112,  446 => 111,  443 => 110,  441 => 109,  439 => 108,  437 => 105,  435 => 104,  432 => 103,  426 => 102,  421 => 101,  414 => 100,  408 => 99,  401 => 98,  398 => 97,  396 => 96,  392 => 94,  385 => 93,  382 => 92,  379 => 91,  375 => 90,  370 => 86,  362 => 82,  358 => 81,  356 => 80,  342 => 78,  340 => 77,  335 => 76,  331 => 75,  328 => 73,  324 => 70,  322 => 69,  320 => 68,  318 => 67,  301 => 66,  299 => 65,  297 => 64,  291 => 59,  269 => 58,  227 => 30,  223 => 29,  219 => 28,  216 => 27,  198 => 26,  180 => 23,  162 => 22,  145 => 18,  141 => 17,  138 => 16,  120 => 15,  96 => 5,  92 => 4,  88 => 3,  85 => 2,  67 => 1,  56 => 174,  53 => 57,  50 => 25,  46 => 20,  43 => 14,);
     }
 
     public function getSourceContext()
@@ -776,11 +762,7 @@ $context["row"], "link", [], "any", true, true, false, 102)) {
                                     {%- for v in item.value -%}
                                     {{- v -}} <br>
                                     {%- endfor -%}
-                                    {#新增內容 若key=problems_group其item.value 為 array 需將其中的值印出 #}
-                                    {% elseif key == \"problems_group\" %}
-                                    {%- for k in item.value -%}
-                                    {{- k -}} <br>
-                                    {%- endfor -%}
+                                    
 
 
 

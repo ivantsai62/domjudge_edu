@@ -64,10 +64,10 @@ class Problem extends \App\Entity\Problem implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', 'probid', 'externalid', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'name', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'timelimit', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'memlimit', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'outputlimit', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'special_run', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'special_compare', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'special_compare_args', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'combined_run_compare', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problemtext', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problemtextFile', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'clearProblemtext', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problemtext_type', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'submissions', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'clarifications', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'contest_problems', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'compare_executable', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'run_executable', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'testcases', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'restriction_languages', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'subtask', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'task_point'];
+            return ['__isInitialized__', 'probid', 'externalid', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'name', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'timelimit', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'memlimit', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'outputlimit', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'special_run', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'special_compare', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'special_compare_args', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'combined_run_compare', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problemtext', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problemtextFile', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'clearProblemtext', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problemtext_type', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'submissions', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'clarifications', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'contest_problems', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'compare_executable', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'run_executable', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'testcases', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'restriction_languages', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'subtask', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'task_point', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problems_group'];
         }
 
-        return ['__isInitialized__', 'probid', 'externalid', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'name', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'timelimit', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'memlimit', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'outputlimit', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'special_run', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'special_compare', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'special_compare_args', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'combined_run_compare', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problemtext', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problemtextFile', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'clearProblemtext', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problemtext_type', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'submissions', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'clarifications', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'contest_problems', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'compare_executable', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'run_executable', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'testcases', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'restriction_languages', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'subtask', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'task_point'];
+        return ['__isInitialized__', 'probid', 'externalid', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'name', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'timelimit', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'memlimit', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'outputlimit', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'special_run', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'special_compare', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'special_compare_args', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'combined_run_compare', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problemtext', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problemtextFile', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'clearProblemtext', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problemtext_type', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'submissions', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'clarifications', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'contest_problems', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'compare_executable', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'run_executable', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'testcases', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'restriction_languages', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'subtask', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'task_point', '' . "\0" . 'App\\Entity\\Problem' . "\0" . 'problems_group'];
     }
 
     /**
@@ -769,6 +769,28 @@ class Problem extends \App\Entity\Problem implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setTaskPoint', [$task_point]);
 
         return parent::setTaskPoint($task_point);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getProblemsGroup()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getProblemsGroup', []);
+
+        return parent::getProblemsGroup();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setProblemsGroup($problems_group)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setProblemsGroup', [$problems_group]);
+
+        return parent::setProblemsGroup($problems_group);
     }
 
     /**

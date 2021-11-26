@@ -63,12 +63,13 @@
             <td>{{ problem.problem.restrictionlanguages|join(', ') }}</td>
 
             <td>
+            {#
             {% if problem.problem.problemsgroup != null %} 
         
             {{ problem.problem.problemsgroup|join(', ')|raw }}
             {% endif %}
             </td>
-          
+            #}
             
         </tr>
            

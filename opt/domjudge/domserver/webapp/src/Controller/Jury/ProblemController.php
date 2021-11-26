@@ -1095,8 +1095,6 @@ class ProblemController extends BaseController
     public function addAction(Request $request)
     {
         $problem = new Problem();
-        //判斷題組是否會有衝突
-        $problemgroup_judge = $this->em->getRepository(Problem::class)->findAll();
 
         $form = $this->createForm(ProblemType::class, $problem);
 

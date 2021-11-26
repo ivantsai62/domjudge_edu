@@ -9,17 +9,7 @@
     
     <div class="collapse navbar-collapse" id="menuDefault">
         <ul class="navbar-nav mr-auto">
-        {# 新增 #}
-         <li class="nav-item {% if current_route in ['team_homepage', 'team_clarification', 'team_clarification_add', 'team_submission'] %}active{% endif %}">
-                <a class="nav-link" href="{{ path('team_homepage') }}"><i class="fas fa-home"></i> Problem list</a>
-            </li>
-
-
-
-            <li class="nav-item {% if current_route in ['team_index', 'team_clarification', 'team_clarification_add', 'team_submission'] %}active{% endif %}">
-                <a class="nav-link" href="{{ path('team_index') }}"><i class="fas fa-user"></i> MyPage </a>
-            </li>
-        {# 新增 #}
+        
             <li class="nav-item {% if current_route == 'team_problems' %}active{% endif %}">
                 {% if is_granted('ROLE_JURY') or current_team_contest.freezeData.started %}
                     <a class="nav-link" href="{{ path('team_problems') }}">

@@ -288,23 +288,27 @@ class __TwigTemplate_7351f0d89dcbf575f77c8c57544da1e8a70ca22059a4db38f527ace8b0b
         // line 113
         echo "                ";
         // line 114
-        echo "            <tr>
-                 <th>Restrction language _test</th>
-                ";
+        echo "                ";
+        // line 115
+        echo "                ";
         // line 116
-        if (twig_test_empty(twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "restrictionlanguages", [], "any", false, false, false, 116))) {
-            // line 117
+        echo "            <tr>
+                 <th>Restrction language </th>
+                ";
+        // line 118
+        if (twig_test_empty(twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "restrictionlanguages", [], "any", false, false, false, 118))) {
+            // line 119
             echo "                        <td class=\"nodata\">none</td>
                     ";
         } else {
-            // line 119
+            // line 121
             echo "                        <td>
                             ";
-            // line 120
+            // line 122
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "restrictionlanguages", [], "any", false, false, false, 120));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "restrictionlanguages", [], "any", false, false, false, 122));
             foreach ($context['_seq'] as $context["_key"] => $context["languages"]) {
-                // line 121
+                // line 123
                 echo "                                ";
                 echo twig_escape_filter($this->env, $context["languages"], "html", null, true);
                 echo "<br/>
@@ -313,11 +317,11 @@ class __TwigTemplate_7351f0d89dcbf575f77c8c57544da1e8a70ca22059a4db38f527ace8b0b
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['languages'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 123
+            // line 125
             echo "                        </td>
                     ";
         }
-        // line 124
+        // line 126
         echo " 
                 
             </tr>
@@ -326,33 +330,33 @@ class __TwigTemplate_7351f0d89dcbf575f77c8c57544da1e8a70ca22059a4db38f527ace8b0b
     </div>
 
     <p>";
-        // line 132
+        // line 134
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 133
-            echo $this->extensions['App\Twig\TwigExtension']->button($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("jury_problem_edit", ["probId" => twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "probid", [], "any", false, false, false, 133)]), "Edit", "primary", "edit");
+            // line 135
+            echo $this->extensions['App\Twig\TwigExtension']->button($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("jury_problem_edit", ["probId" => twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "probid", [], "any", false, false, false, 135)]), "Edit", "primary", "edit");
             echo "
             ";
-            // line 134
-            echo $this->extensions['App\Twig\TwigExtension']->button($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("jury_problem_delete", ["probId" => twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "probid", [], "any", false, false, false, 134)]), "Delete", "danger", "trash-alt", true);
+            // line 136
+            echo $this->extensions['App\Twig\TwigExtension']->button($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("jury_problem_delete", ["probId" => twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "probid", [], "any", false, false, false, 136)]), "Delete", "danger", "trash-alt", true);
             echo "
         ";
         }
-        // line 136
+        // line 138
         echo "        ";
-        $this->loadTemplate("jury/partials/rejudge_form.html.twig", "jury/problem.html.twig", 136)->display(twig_array_merge($context, ["table" => "problem", "id" => twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "probid", [], "any", false, false, false, 136), "buttonClass" => "btn-secondary"]));
-        // line 137
+        $this->loadTemplate("jury/partials/rejudge_form.html.twig", "jury/problem.html.twig", 138)->display(twig_array_merge($context, ["table" => "problem", "id" => twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "probid", [], "any", false, false, false, 138), "buttonClass" => "btn-secondary"]));
+        // line 139
         echo "    </p>
 
     <h2>Contests</h2>
 
     ";
-        // line 141
-        if (twig_test_empty(twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "contestProblems", [], "any", false, false, false, 141))) {
-            // line 142
+        // line 143
+        if (twig_test_empty(twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "contestProblems", [], "any", false, false, false, 143))) {
+            // line 144
             echo "        <p class=\"nodata\">No contests defined</p>
     ";
         } else {
-            // line 144
+            // line 146
             echo "        <div class=\"row\">
             <div class=\"col-md-6\">
                 <table class=\"data-table table table-hover table-striped table-sm\">
@@ -369,101 +373,101 @@ class __TwigTemplate_7351f0d89dcbf575f77c8c57544da1e8a70ca22059a4db38f527ace8b0b
                     </thead>
                     <tbody>
                     ";
-            // line 159
+            // line 161
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "contestProblems", [], "any", false, false, false, 159));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "contestProblems", [], "any", false, false, false, 161));
             foreach ($context['_seq'] as $context["_key"] => $context["contestProblem"]) {
-                // line 160
-                echo "                        ";
-                $context["link"] = $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("jury_contest", ["contestId" => twig_get_attribute($this->env, $this->source, $context["contestProblem"], "cid", [], "any", false, false, false, 160)]);
-                // line 161
-                echo "                        <tr>
-                            <td><a href=\"";
                 // line 162
-                echo twig_escape_filter($this->env, ($context["link"] ?? null), "html", null, true);
-                echo "\">c";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["contestProblem"], "cid", [], "any", false, false, false, 162), "html", null, true);
-                echo "</a></td>
-                            <td><a href=\"";
+                echo "                        ";
+                $context["link"] = $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("jury_contest", ["contestId" => twig_get_attribute($this->env, $this->source, $context["contestProblem"], "cid", [], "any", false, false, false, 162)]);
                 // line 163
-                echo twig_escape_filter($this->env, ($context["link"] ?? null), "html", null, true);
-                echo "\">";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["contestProblem"], "contest", [], "any", false, false, false, 163), "shortname", [], "any", false, false, false, 163), "html", null, true);
-                echo "</a></td>
+                echo "                        <tr>
                             <td><a href=\"";
                 // line 164
                 echo twig_escape_filter($this->env, ($context["link"] ?? null), "html", null, true);
-                echo "\">";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["contestProblem"], "contest", [], "any", false, false, false, 164), "name", [], "any", false, false, false, 164), "html", null, true);
+                echo "\">c";
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["contestProblem"], "cid", [], "any", false, false, false, 164), "html", null, true);
                 echo "</a></td>
                             <td><a href=\"";
                 // line 165
                 echo twig_escape_filter($this->env, ($context["link"] ?? null), "html", null, true);
                 echo "\">";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["contestProblem"], "shortname", [], "any", false, false, false, 165), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["contestProblem"], "contest", [], "any", false, false, false, 165), "shortname", [], "any", false, false, false, 165), "html", null, true);
                 echo "</a></td>
                             <td><a href=\"";
                 // line 166
                 echo twig_escape_filter($this->env, ($context["link"] ?? null), "html", null, true);
                 echo "\">";
-                echo twig_escape_filter($this->env, $this->extensions['App\Twig\TwigExtension']->printYesNo(twig_get_attribute($this->env, $this->source, $context["contestProblem"], "allowSubmit", [], "any", false, false, false, 166)), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["contestProblem"], "contest", [], "any", false, false, false, 166), "name", [], "any", false, false, false, 166), "html", null, true);
                 echo "</a></td>
                             <td><a href=\"";
                 // line 167
                 echo twig_escape_filter($this->env, ($context["link"] ?? null), "html", null, true);
                 echo "\">";
-                echo twig_escape_filter($this->env, $this->extensions['App\Twig\TwigExtension']->printYesNo(twig_get_attribute($this->env, $this->source, $context["contestProblem"], "allowJudge", [], "any", false, false, false, 167)), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["contestProblem"], "shortname", [], "any", false, false, false, 167), "html", null, true);
+                echo "</a></td>
+                            <td><a href=\"";
+                // line 168
+                echo twig_escape_filter($this->env, ($context["link"] ?? null), "html", null, true);
+                echo "\">";
+                echo twig_escape_filter($this->env, $this->extensions['App\Twig\TwigExtension']->printYesNo(twig_get_attribute($this->env, $this->source, $context["contestProblem"], "allowSubmit", [], "any", false, false, false, 168)), "html", null, true);
+                echo "</a></td>
+                            <td><a href=\"";
+                // line 169
+                echo twig_escape_filter($this->env, ($context["link"] ?? null), "html", null, true);
+                echo "\">";
+                echo twig_escape_filter($this->env, $this->extensions['App\Twig\TwigExtension']->printYesNo(twig_get_attribute($this->env, $this->source, $context["contestProblem"], "allowJudge", [], "any", false, false, false, 169)), "html", null, true);
                 echo "</a></td>
                             ";
-                // line 168
-                if (twig_test_empty(twig_get_attribute($this->env, $this->source, $context["contestProblem"], "color", [], "any", false, false, false, 168))) {
-                    // line 169
+                // line 170
+                if (twig_test_empty(twig_get_attribute($this->env, $this->source, $context["contestProblem"], "color", [], "any", false, false, false, 170))) {
+                    // line 171
                     echo "                                <td><a href=\"";
                     echo twig_escape_filter($this->env, ($context["link"] ?? null), "html", null, true);
                     echo "\">&nbsp;</a></td>
                             ";
                 } else {
-                    // line 171
+                    // line 173
                     echo "                                <td title=\"";
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["contestProblem"], "color", [], "any", false, false, false, 171), "html", null, true);
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["contestProblem"], "color", [], "any", false, false, false, 173), "html", null, true);
                     echo "\">
                                     <a href=\"";
-                    // line 172
+                    // line 174
                     echo twig_escape_filter($this->env, ($context["link"] ?? null), "html", null, true);
                     echo "\">
                                         <div class=\"circle\" style=\"background-color: ";
-                    // line 173
-                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["contestProblem"], "color", [], "any", false, false, false, 173), "html", null, true);
+                    // line 175
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["contestProblem"], "color", [], "any", false, false, false, 175), "html", null, true);
                     echo "\"></div>
                                     </a>
                                 </td>
                             ";
                 }
-                // line 177
+                // line 179
                 echo "                        </tr>
                     ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['contestProblem'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 179
+            // line 181
             echo "                    </tbody>
                 </table>
             </div>
         </div>
     ";
         }
-        // line 184
+        // line 186
         echo "
     <h2>Submissions for ";
-        // line 185
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "name", [], "any", false, false, false, 185), "html", null, true);
+        // line 187
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "name", [], "any", false, false, false, 187), "html", null, true);
         echo "</h2>
 
     <div data-ajax-refresh-target>";
-        // line 188
-        $this->loadTemplate("jury/partials/submission_list.html.twig", "jury/problem.html.twig", 188)->display(twig_array_merge($context, ["showTestcases" => false]));
-        // line 189
+        // line 190
+        $this->loadTemplate("jury/partials/submission_list.html.twig", "jury/problem.html.twig", 190)->display(twig_array_merge($context, ["showTestcases" => false]));
+        // line 191
         echo "    </div>
 
 ";
@@ -481,7 +485,7 @@ class __TwigTemplate_7351f0d89dcbf575f77c8c57544da1e8a70ca22059a4db38f527ace8b0b
 
     public function getDebugInfo()
     {
-        return array (  467 => 189,  465 => 188,  460 => 185,  457 => 184,  450 => 179,  443 => 177,  436 => 173,  432 => 172,  427 => 171,  421 => 169,  419 => 168,  413 => 167,  407 => 166,  401 => 165,  395 => 164,  389 => 163,  383 => 162,  380 => 161,  377 => 160,  373 => 159,  356 => 144,  352 => 142,  350 => 141,  344 => 137,  341 => 136,  336 => 134,  332 => 133,  330 => 132,  321 => 124,  317 => 123,  308 => 121,  304 => 120,  301 => 119,  297 => 117,  295 => 116,  291 => 114,  289 => 113,  283 => 110,  279 => 108,  276 => 107,  271 => 104,  262 => 101,  254 => 99,  252 => 98,  247 => 95,  240 => 90,  238 => 89,  234 => 87,  225 => 84,  217 => 82,  215 => 81,  210 => 78,  202 => 73,  197 => 71,  192 => 68,  190 => 67,  186 => 65,  180 => 63,  174 => 61,  172 => 60,  165 => 55,  159 => 53,  153 => 51,  151 => 50,  143 => 45,  134 => 40,  128 => 38,  124 => 36,  122 => 35,  114 => 30,  110 => 28,  104 => 25,  100 => 23,  98 => 22,  93 => 20,  83 => 13,  80 => 12,  76 => 11,  70 => 8,  65 => 7,  61 => 6,  51 => 4,  46 => 1,  44 => 2,  37 => 1,);
+        return array (  471 => 191,  469 => 190,  464 => 187,  461 => 186,  454 => 181,  447 => 179,  440 => 175,  436 => 174,  431 => 173,  425 => 171,  423 => 170,  417 => 169,  411 => 168,  405 => 167,  399 => 166,  393 => 165,  387 => 164,  384 => 163,  381 => 162,  377 => 161,  360 => 146,  356 => 144,  354 => 143,  348 => 139,  345 => 138,  340 => 136,  336 => 135,  334 => 134,  325 => 126,  321 => 125,  312 => 123,  308 => 122,  305 => 121,  301 => 119,  299 => 118,  295 => 116,  293 => 115,  291 => 114,  289 => 113,  283 => 110,  279 => 108,  276 => 107,  271 => 104,  262 => 101,  254 => 99,  252 => 98,  247 => 95,  240 => 90,  238 => 89,  234 => 87,  225 => 84,  217 => 82,  215 => 81,  210 => 78,  202 => 73,  197 => 71,  192 => 68,  190 => 67,  186 => 65,  180 => 63,  174 => 61,  172 => 60,  165 => 55,  159 => 53,  153 => 51,  151 => 50,  143 => 45,  134 => 40,  128 => 38,  124 => 36,  122 => 35,  114 => 30,  110 => 28,  104 => 25,  100 => 23,  98 => 22,  93 => 20,  83 => 13,  80 => 12,  76 => 11,  70 => 8,  65 => 7,  61 => 6,  51 => 4,  46 => 1,  44 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

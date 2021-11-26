@@ -51,43 +51,17 @@ class __TwigTemplate_fa15e66070832ef4f808ef64840290414436581c3a4cc94490f6d83e9a7
         echo "    
     <div class=\"collapse navbar-collapse\" id=\"menuDefault\">
         <ul class=\"navbar-nav mr-auto\">
-        ";
-        // line 13
-        echo "         <li class=\"nav-item ";
-        if (twig_in_filter(($context["current_route"] ?? null), [0 => "team_homepage", 1 => "team_clarification", 2 => "team_clarification_add", 3 => "team_submission"])) {
-            echo "active";
-        }
-        echo "\">
-                <a class=\"nav-link\" href=\"";
-        // line 14
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("team_homepage");
-        echo "\"><i class=\"fas fa-home\"></i> Problem list</a>
-            </li>
-
-
-
+        
             <li class=\"nav-item ";
-        // line 19
-        if (twig_in_filter(($context["current_route"] ?? null), [0 => "team_index", 1 => "team_clarification", 2 => "team_clarification_add", 3 => "team_submission"])) {
-            echo "active";
-        }
-        echo "\">
-                <a class=\"nav-link\" href=\"";
-        // line 20
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("team_index");
-        echo "\"><i class=\"fas fa-user\"></i> MyPage </a>
-            </li>
-        ";
-        // line 23
-        echo "            <li class=\"nav-item ";
+        // line 13
         if ((($context["current_route"] ?? null) == "team_problems")) {
             echo "active";
         }
         echo "\">
                 ";
-        // line 24
-        if (($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_JURY") || twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["current_team_contest"] ?? null), "freezeData", [], "any", false, false, false, 24), "started", [], "any", false, false, false, 24))) {
-            // line 25
+        // line 14
+        if (($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_JURY") || twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["current_team_contest"] ?? null), "freezeData", [], "any", false, false, false, 14), "started", [], "any", false, false, false, 14))) {
+            // line 15
             echo "                    <a class=\"nav-link\" href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("team_problems");
             echo "\">
@@ -95,74 +69,74 @@ class __TwigTemplate_fa15e66070832ef4f808ef64840290414436581c3a4cc94490f6d83e9a7
                     </a>
                 ";
         } else {
-            // line 29
+            // line 19
             echo "                    <a class=\"nav-link disabled\"><i class=\"fas fa-book-open\"></i> Problemset</a>
                 ";
         }
-        // line 31
+        // line 21
         echo "            </li>
             ";
-        // line 32
+        // line 22
         if (($context["have_printing"] ?? null)) {
-            // line 33
+            // line 23
             echo "                <li class=\"nav-item ";
             if ((($context["current_route"] ?? null) == "team_print")) {
                 echo "active";
             }
             echo "\">
                     <a class=\"nav-link\" href=\"";
-            // line 34
+            // line 24
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("team_print");
             echo "\"><i class=\"fas fa-file-alt\"></i> Print</a>
                 </li>
             ";
         }
-        // line 37
+        // line 27
         echo "            <li class=\"nav-item ";
         if (twig_in_filter(($context["current_route"] ?? null), [0 => "team_scoreboard", 1 => "team_team"])) {
             echo "active";
         }
         echo "\">
                 <a class=\"nav-link\" href=\"";
-        // line 38
+        // line 28
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("team_scoreboard");
         echo "\"><i class=\"fas fa-list-ol\"></i> Scoreboard</a>
             </li>";
-        // line 41
+        // line 31
         echo "<li class=\"nav-item ";
         if (twig_in_filter(($context["current_route"] ?? null), [0 => "team_scoreboard", 1 => "team_team"])) {
             echo "active";
         }
         echo "\">
                 <a class=\"nav-link\" href=\"";
-        // line 42
+        // line 32
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("team_compile");
         echo "\"><i class=\"fa fa-window-maximize\"></i> IDE</a>
             </li>";
-        // line 45
+        // line 35
         if (($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_JURY") || $this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_BALLOON"))) {
-            // line 46
+            // line 36
             echo "                <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-            // line 47
+            // line 37
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("jury_index");
             echo "\"><i class=\"fas fa-arrow-right\"></i> Jury</a>
                 </li>
             ";
         }
-        // line 50
+        // line 40
         echo "        </ul>
 
         <div id=\"submitbut\">";
-        // line 55
+        // line 45
         echo "            ";
-        if (($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_JURY") || twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["current_team_contest"] ?? null), "freezeData", [], "any", false, false, false, 55), "started", [], "any", false, false, false, 55))) {
-            // line 56
+        if (($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_JURY") || twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["current_team_contest"] ?? null), "freezeData", [], "any", false, false, false, 45), "started", [], "any", false, false, false, 45))) {
+            // line 46
             echo "                <a class=\"nav-link justify-content-center \"  data-ajax-modal data-ajax-modal-after=\"initSubmitModal\" href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("team_submit");
             echo "\">
                     <button type=\"button\" class=\"btn btn-success btn-sm\"";
-            // line 57
+            // line 47
             if ((($context["current_route"] ?? null) == "team_compile")) {
                 echo " style=\"visibility: hidden\"";
             }
@@ -172,7 +146,7 @@ class __TwigTemplate_fa15e66070832ef4f808ef64840290414436581c3a4cc94490f6d83e9a7
                 </a>
             ";
         } else {
-            // line 62
+            // line 52
             echo "                <a class=\"nav-link justify-content-center\">
                     <button type=\"button\" class=\"btn btn-success btn-sm disabled\" disabled>
                         <i class=\"fas fa-cloud-upload-alt\"></i> Submit
@@ -180,36 +154,36 @@ class __TwigTemplate_fa15e66070832ef4f808ef64840290414436581c3a4cc94490f6d83e9a7
                 </a>
             ";
         }
-        // line 69
+        // line 59
         echo "</div>
 
         ";
-        // line 71
-        $this->loadTemplate("partials/menu_login_logout_button.html.twig", "team/menu.html.twig", 71)->display(twig_array_merge($context, ["confirmLogout" => true]));
-        // line 72
+        // line 61
+        $this->loadTemplate("partials/menu_login_logout_button.html.twig", "team/menu.html.twig", 61)->display(twig_array_merge($context, ["confirmLogout" => true]));
+        // line 62
         echo "
         <ul class=\"navbar-nav\">
             ";
-        // line 74
+        // line 64
         if ((twig_length_filter($this->env, ($context["current_team_contests"] ?? null)) > 1)) {
-            // line 75
+            // line 65
             echo "                ";
-            $this->loadTemplate("partials/menu_change_contest.html.twig", "team/menu.html.twig", 75)->display(twig_array_merge($context, ["contest" => ($context["current_team_contest"] ?? null), "contests" => ($context["current_team_contests"] ?? null), "change_path" => "team_change_contest", "show_no_contest" => false]));
-            // line 76
+            $this->loadTemplate("partials/menu_change_contest.html.twig", "team/menu.html.twig", 65)->display(twig_array_merge($context, ["contest" => ($context["current_team_contest"] ?? null), "contests" => ($context["current_team_contests"] ?? null), "change_path" => "team_change_contest", "show_no_contest" => false]));
+            // line 66
             echo "            ";
         }
-        // line 77
+        // line 67
         echo "        </ul>
 
         ";
-        // line 79
-        $this->loadTemplate("partials/menu_countdown.html.twig", "team/menu.html.twig", 79)->display(twig_array_merge($context, ["contest" => ($context["current_team_contest"] ?? null)]));
-        // line 80
+        // line 69
+        $this->loadTemplate("partials/menu_countdown.html.twig", "team/menu.html.twig", 69)->display(twig_array_merge($context, ["contest" => ($context["current_team_contest"] ?? null)]));
+        // line 70
         echo "    </div>
 </nav>
 ";
-        // line 82
-        $this->loadTemplate("partials/scoreboard_progress_bar.html.twig", "team/menu.html.twig", 82)->display(twig_array_merge($context, ["margin" =>  -9, "contest" => ($context["current_team_contest"] ?? null)]));
+        // line 72
+        $this->loadTemplate("partials/scoreboard_progress_bar.html.twig", "team/menu.html.twig", 72)->display(twig_array_merge($context, ["margin" =>  -9, "contest" => ($context["current_team_contest"] ?? null)]));
     }
 
     public function getTemplateName()
@@ -224,7 +198,7 @@ class __TwigTemplate_fa15e66070832ef4f808ef64840290414436581c3a4cc94490f6d83e9a7
 
     public function getDebugInfo()
     {
-        return array (  212 => 82,  208 => 80,  206 => 79,  202 => 77,  199 => 76,  196 => 75,  194 => 74,  190 => 72,  188 => 71,  184 => 69,  176 => 62,  166 => 57,  161 => 56,  158 => 55,  154 => 50,  148 => 47,  145 => 46,  143 => 45,  139 => 42,  132 => 41,  128 => 38,  121 => 37,  115 => 34,  108 => 33,  106 => 32,  103 => 31,  99 => 29,  91 => 25,  89 => 24,  82 => 23,  77 => 20,  71 => 19,  63 => 14,  56 => 13,  51 => 9,  49 => 8,  40 => 2,  37 => 1,);
+        return array (  186 => 72,  182 => 70,  180 => 69,  176 => 67,  173 => 66,  170 => 65,  168 => 64,  164 => 62,  162 => 61,  158 => 59,  150 => 52,  140 => 47,  135 => 46,  132 => 45,  128 => 40,  122 => 37,  119 => 36,  117 => 35,  113 => 32,  106 => 31,  102 => 28,  95 => 27,  89 => 24,  82 => 23,  80 => 22,  77 => 21,  73 => 19,  65 => 15,  63 => 14,  57 => 13,  51 => 9,  49 => 8,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()

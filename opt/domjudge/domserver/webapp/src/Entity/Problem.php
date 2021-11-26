@@ -190,7 +190,6 @@ class Problem extends BaseApiEntity
     private $testcases;
 
     /*-------CCU-------*/
-    //ivan
     //新增限制語言
      /**
      * @var array
@@ -217,7 +216,12 @@ class Problem extends BaseApiEntity
      *
      */
     private $task_point;
-  
+    //add problems_group
+    /**
+     * @ORM\Column(type="json", name="problems_group",options={"comment"="JSON-encoded restrictions","default"="NULL"},
+     *     nullable=true)
+     */
+    private $problems_group;
     /*-------CCU-------*/
 
 
@@ -897,6 +901,16 @@ class Problem extends BaseApiEntity
         return $this;
     }
 
+    public function getProblemsGroup()
+    {
+        return $this->problems_group;
+    }
 
+    public function setProblemsGroup($problems_group)
+    {
+        $this->problems_group = $problems_group;
+
+        return $this;
+    }
     /*-------CCU-------*/
 }

@@ -57,39 +57,28 @@ class __TwigTemplate_74ce070a97b216e1851a628df45b22d86ba3ff76f937fc83c084642483d
         echo "
     <div class=\"collapse navbar-collapse\" id=\"menuDefault\">
         <ul class=\"navbar-nav mr-auto\">
-            <li class=\"nav-item ";
-        // line 12
-        if (twig_in_filter((isset($context["current_route"]) || array_key_exists("current_route", $context) ? $context["current_route"] : (function () { throw new RuntimeError('Variable "current_route" does not exist.', 12, $this->source); })()), [0 => "public_index", 1 => "public_team", 2 => "public_homepage"])) {
-            echo "active";
-        }
-        echo "\">
-                <a class=\"nav-link\" href=\"";
-        // line 13
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("public_homepage");
-        echo "\"><i class=\"fas fa-home\"></i> HomePage</a>
-            </li>
-
-            <li class=\"nav-item ";
-        // line 16
-        if (twig_in_filter((isset($context["current_route"]) || array_key_exists("current_route", $context) ? $context["current_route"] : (function () { throw new RuntimeError('Variable "current_route" does not exist.', 16, $this->source); })()), [0 => "public_index", 1 => "public_team"])) {
-            echo "active";
-        }
-        echo "\">
-                <a class=\"nav-link\" href=\"";
+        ";
         // line 17
+        echo "            <li class=\"nav-item ";
+        if (twig_in_filter((isset($context["current_route"]) || array_key_exists("current_route", $context) ? $context["current_route"] : (function () { throw new RuntimeError('Variable "current_route" does not exist.', 17, $this->source); })()), [0 => "public_index", 1 => "public_team"])) {
+            echo "active";
+        }
+        echo "\">
+                <a class=\"nav-link\" href=\"";
+        // line 18
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("public_index");
         echo "\"><i class=\"fas fa-list-ol\"></i> Scoreboard</a>
             </li>
             <li class=\"nav-item ";
-        // line 19
-        if (((isset($context["current_route"]) || array_key_exists("current_route", $context) ? $context["current_route"] : (function () { throw new RuntimeError('Variable "current_route" does not exist.', 19, $this->source); })()) == "public_problems")) {
+        // line 20
+        if (((isset($context["current_route"]) || array_key_exists("current_route", $context) ? $context["current_route"] : (function () { throw new RuntimeError('Variable "current_route" does not exist.', 20, $this->source); })()) == "public_problems")) {
             echo "active";
         }
         echo "\">
                 ";
-        // line 20
-        if (($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_JURY") || ( !(null === (isset($context["current_public_contest"]) || array_key_exists("current_public_contest", $context) ? $context["current_public_contest"] : (function () { throw new RuntimeError('Variable "current_public_contest" does not exist.', 20, $this->source); })())) && twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["current_public_contest"]) || array_key_exists("current_public_contest", $context) ? $context["current_public_contest"] : (function () { throw new RuntimeError('Variable "current_public_contest" does not exist.', 20, $this->source); })()), "freezeData", [], "any", false, false, false, 20), "started", [], "any", false, false, false, 20)))) {
-            // line 21
+        // line 21
+        if (($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_JURY") || ( !(null === (isset($context["current_public_contest"]) || array_key_exists("current_public_contest", $context) ? $context["current_public_contest"] : (function () { throw new RuntimeError('Variable "current_public_contest" does not exist.', 21, $this->source); })())) && twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["current_public_contest"]) || array_key_exists("current_public_contest", $context) ? $context["current_public_contest"] : (function () { throw new RuntimeError('Variable "current_public_contest" does not exist.', 21, $this->source); })()), "freezeData", [], "any", false, false, false, 21), "started", [], "any", false, false, false, 21)))) {
+            // line 22
             echo "                    <a class=\"nav-link\" href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("public_problems");
             echo "\">
@@ -97,20 +86,20 @@ class __TwigTemplate_74ce070a97b216e1851a628df45b22d86ba3ff76f937fc83c084642483d
                     </a>
                 ";
         } else {
-            // line 25
+            // line 26
             echo "                    <a class=\"nav-link disabled\"><i class=\"fas fa-book-open\"></i> Problemset</a>
                 ";
         }
-        // line 27
+        // line 28
         echo "            </li>
 
             ";
-        // line 29
+        // line 30
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_TEAM")) {
-            // line 30
+            // line 31
             echo "                <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-            // line 31
+            // line 32
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("team_index");
             echo "\">
                         <i class=\"fas fa-arrow-right\"></i> Team
@@ -118,50 +107,50 @@ class __TwigTemplate_74ce070a97b216e1851a628df45b22d86ba3ff76f937fc83c084642483d
                 </li>
             ";
         }
-        // line 36
+        // line 37
         echo "
             ";
-        // line 37
+        // line 38
         if (($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_JURY") || $this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_BALLOON"))) {
-            // line 38
+            // line 39
             echo "                <li class=\"nav-item\">
                     <a class=\"nav-link\" href=\"";
-            // line 39
+            // line 40
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("jury_index");
             echo "\"><i class=\"fas fa-arrow-right\"></i> Jury</a>
                 </li>
             ";
         }
-        // line 42
+        // line 43
         echo "        </ul>
 
         ";
-        // line 44
-        $this->loadTemplate("partials/menu_login_logout_button.html.twig", "public/menu.html.twig", 44)->display($context);
         // line 45
+        $this->loadTemplate("partials/menu_login_logout_button.html.twig", "public/menu.html.twig", 45)->display($context);
+        // line 46
         echo "
         <ul class=\"navbar-nav\">
             ";
-        // line 47
-        if ((twig_length_filter($this->env, (isset($context["current_public_contests"]) || array_key_exists("current_public_contests", $context) ? $context["current_public_contests"] : (function () { throw new RuntimeError('Variable "current_public_contests" does not exist.', 47, $this->source); })())) > 1)) {
-            // line 48
-            echo "                ";
-            $this->loadTemplate("partials/menu_change_contest.html.twig", "public/menu.html.twig", 48)->display(twig_array_merge($context, ["contest" => (isset($context["current_public_contest"]) || array_key_exists("current_public_contest", $context) ? $context["current_public_contest"] : (function () { throw new RuntimeError('Variable "current_public_contest" does not exist.', 48, $this->source); })()), "contests" => (isset($context["current_public_contests"]) || array_key_exists("current_public_contests", $context) ? $context["current_public_contests"] : (function () { throw new RuntimeError('Variable "current_public_contests" does not exist.', 48, $this->source); })()), "change_path" => "public_change_contest", "show_no_contest" => false]));
+        // line 48
+        if ((twig_length_filter($this->env, (isset($context["current_public_contests"]) || array_key_exists("current_public_contests", $context) ? $context["current_public_contests"] : (function () { throw new RuntimeError('Variable "current_public_contests" does not exist.', 48, $this->source); })())) > 1)) {
             // line 49
+            echo "                ";
+            $this->loadTemplate("partials/menu_change_contest.html.twig", "public/menu.html.twig", 49)->display(twig_array_merge($context, ["contest" => (isset($context["current_public_contest"]) || array_key_exists("current_public_contest", $context) ? $context["current_public_contest"] : (function () { throw new RuntimeError('Variable "current_public_contest" does not exist.', 49, $this->source); })()), "contests" => (isset($context["current_public_contests"]) || array_key_exists("current_public_contests", $context) ? $context["current_public_contests"] : (function () { throw new RuntimeError('Variable "current_public_contests" does not exist.', 49, $this->source); })()), "change_path" => "public_change_contest", "show_no_contest" => false]));
+            // line 50
             echo "            ";
         }
-        // line 50
+        // line 51
         echo "        </ul>
 
         ";
-        // line 52
-        $this->loadTemplate("partials/menu_countdown.html.twig", "public/menu.html.twig", 52)->display(twig_array_merge($context, ["contest" => (isset($context["current_public_contest"]) || array_key_exists("current_public_contest", $context) ? $context["current_public_contest"] : (function () { throw new RuntimeError('Variable "current_public_contest" does not exist.', 52, $this->source); })())]));
         // line 53
+        $this->loadTemplate("partials/menu_countdown.html.twig", "public/menu.html.twig", 53)->display(twig_array_merge($context, ["contest" => (isset($context["current_public_contest"]) || array_key_exists("current_public_contest", $context) ? $context["current_public_contest"] : (function () { throw new RuntimeError('Variable "current_public_contest" does not exist.', 53, $this->source); })())]));
+        // line 54
         echo "    </div>
 </nav>
 ";
-        // line 55
-        $this->loadTemplate("partials/scoreboard_progress_bar.html.twig", "public/menu.html.twig", 55)->display(twig_array_merge($context, ["margin" =>  -9, "contest" => (isset($context["current_public_contest"]) || array_key_exists("current_public_contest", $context) ? $context["current_public_contest"] : (function () { throw new RuntimeError('Variable "current_public_contest" does not exist.', 55, $this->source); })())]));
+        // line 56
+        $this->loadTemplate("partials/scoreboard_progress_bar.html.twig", "public/menu.html.twig", 56)->display(twig_array_merge($context, ["margin" =>  -9, "contest" => (isset($context["current_public_contest"]) || array_key_exists("current_public_contest", $context) ? $context["current_public_contest"] : (function () { throw new RuntimeError('Variable "current_public_contest" does not exist.', 56, $this->source); })())]));
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
@@ -182,7 +171,7 @@ class __TwigTemplate_74ce070a97b216e1851a628df45b22d86ba3ff76f937fc83c084642483d
 
     public function getDebugInfo()
     {
-        return array (  164 => 55,  160 => 53,  158 => 52,  154 => 50,  151 => 49,  148 => 48,  146 => 47,  142 => 45,  140 => 44,  136 => 42,  130 => 39,  127 => 38,  125 => 37,  122 => 36,  114 => 31,  111 => 30,  109 => 29,  105 => 27,  101 => 25,  93 => 21,  91 => 20,  85 => 19,  80 => 17,  74 => 16,  68 => 13,  62 => 12,  57 => 9,  55 => 8,  46 => 2,  43 => 1,);
+        return array (  153 => 56,  149 => 54,  147 => 53,  143 => 51,  140 => 50,  137 => 49,  135 => 48,  131 => 46,  129 => 45,  125 => 43,  119 => 40,  116 => 39,  114 => 38,  111 => 37,  103 => 32,  100 => 31,  98 => 30,  94 => 28,  90 => 26,  82 => 22,  80 => 21,  74 => 20,  69 => 18,  62 => 17,  57 => 9,  55 => 8,  46 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -198,10 +187,11 @@ class __TwigTemplate_74ce070a97b216e1851a628df45b22d86ba3ff76f937fc83c084642483d
 
     <div class=\"collapse navbar-collapse\" id=\"menuDefault\">
         <ul class=\"navbar-nav mr-auto\">
+        {#
             <li class=\"nav-item {% if current_route in ['public_index', 'public_team','public_homepage'] %}active{% endif %}\">
                 <a class=\"nav-link\" href=\"{{ path('public_homepage') }}\"><i class=\"fas fa-home\"></i> HomePage</a>
             </li>
-
+    #}
             <li class=\"nav-item {% if current_route in ['public_index', 'public_team'] %}active{% endif %}\">
                 <a class=\"nav-link\" href=\"{{ path('public_index') }}\"><i class=\"fas fa-list-ol\"></i> Scoreboard</a>
             </li>

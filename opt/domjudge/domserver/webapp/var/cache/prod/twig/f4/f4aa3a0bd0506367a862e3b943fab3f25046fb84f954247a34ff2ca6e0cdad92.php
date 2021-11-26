@@ -377,7 +377,8 @@ class __TwigTemplate_51c4ac68a0e8d61535f49744d575f96bd469ffa9965ab31987e204b70de
                 var \$problems = \$('#submit_problem_language');
                 var \$form = \$(this).closest('form');
                 var data = {};
-                //新增測試資料  
+                //新增 ajax
+                //ivan
                 data[\$problem.attr('name')] = \$problem.val();
                 console.log(\$problem.attr('name'));
                 console.log(\$problem.val());

@@ -91,96 +91,83 @@ class __TwigTemplate_1eeabe94c9945a0a11872652ec535d692bdb61463d50454f3ec9df2dc2b
             <th> Time Limit </th> 
             <th> Memory Limit </th>
             <th> Restriction Languages </th>
-            <th> Problems Group </th>
         </tr>
     </thead>
 
     <tbody>
         
         ";
-            // line 38
+            // line 37
             $context["num_group"] = 0;
-            // line 39
+            // line 38
             echo "        
             ";
-            // line 40
+            // line 39
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(twig_array_batch(($context["problems"] ?? null), 1, []));
             foreach ($context['_seq'] as $context["_key"] => $context["row"]) {
-                // line 41
+                // line 40
                 echo "            ";
                 $context['_parent'] = $context;
                 $context['_seq'] = twig_ensure_traversable($context["row"]);
                 foreach ($context['_seq'] as $context["_key"] => $context["problemData"]) {
-                    // line 42
+                    // line 41
                     echo "                              
                                     ";
-                    // line 43
+                    // line 42
                     if (twig_test_empty($context["problemData"])) {
-                        // line 44
+                        // line 43
                         echo "                                        <div class=\"card\" style=\"border: none;\"></div>
                                     ";
                     } else {
-                        // line 46
+                        // line 45
                         echo "                                        ";
-                        $context["problem"] = twig_get_attribute($this->env, $this->source, $context["problemData"], 0, [], "any", false, false, false, 46);
-                        // line 47
+                        $context["problem"] = twig_get_attribute($this->env, $this->source, $context["problemData"], 0, [], "any", false, false, false, 45);
+                        // line 46
                         echo "          
         
         <tr>
             <td width = \"5%\">
                  <a href=\"/public/problems/";
-                        // line 51
-                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 51), "probid", [], "any", false, false, false, 51), "html", null, true);
+                        // line 50
+                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 50), "probid", [], "any", false, false, false, 50), "html", null, true);
                         echo "/text\" target=\"_blank\" style=\"text-decoration:none; color:black\">
 
                  ";
-                        // line 53
-                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 53), "probid", [], "any", false, false, false, 53), "html", null, true);
+                        // line 52
+                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 52), "probid", [], "any", false, false, false, 52), "html", null, true);
                         echo "</a></td>
                 
             <td width=\"30%\">
                 <a href=\"/team/problem_list/";
-                        // line 56
-                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 56), "probid", [], "any", false, false, false, 56), "html", null, true);
+                        // line 55
+                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 55), "probid", [], "any", false, false, false, 55), "html", null, true);
                         echo "\" target=\"_blank\" style=\"text-decoration:none;\">
                 
                  ";
-                        // line 58
-                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 58), "name", [], "any", false, false, false, 58), "html", null, true);
+                        // line 57
+                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 57), "name", [], "any", false, false, false, 57), "html", null, true);
                         echo "</a></td>
 
             <td>";
-                        // line 60
-                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 60), "timelimit", [], "any", false, false, false, 60), "html", null, true);
+                        // line 59
+                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 59), "timelimit", [], "any", false, false, false, 59), "html", null, true);
                         echo "</td>
 
             <td>";
-                        // line 62
-                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 62), "memlimit", [], "any", false, false, false, 62), "html", null, true);
+                        // line 61
+                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 61), "memlimit", [], "any", false, false, false, 61), "html", null, true);
                         echo "</td>
             
             <td>";
-                        // line 64
-                        echo twig_escape_filter($this->env, twig_join_filter(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 64), "restrictionlanguages", [], "any", false, false, false, 64), ", "), "html", null, true);
+                        // line 63
+                        echo twig_escape_filter($this->env, twig_join_filter(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 63), "restrictionlanguages", [], "any", false, false, false, 63), ", "), "html", null, true);
                         echo "</td>
 
             <td>
             ";
-                        // line 67
-                        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 67), "problemsgroup", [], "any", false, false, false, 67) != null)) {
-                            echo " 
-        
-            ";
-                            // line 69
-                            echo twig_join_filter(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["problem"] ?? null), "problem", [], "any", false, false, false, 69), "problemsgroup", [], "any", false, false, false, 69), ", ");
-                            echo "
-            ";
-                        }
-                        // line 71
-                        echo "            </td>
-          
-            
+                        // line 73
+                        echo "            
         </tr>
            
             ";
@@ -221,7 +208,7 @@ class __TwigTemplate_1eeabe94c9945a0a11872652ec535d692bdb61463d50454f3ec9df2dc2b
 
     public function getDebugInfo()
     {
-        return array (  208 => 84,  201 => 79,  195 => 78,  189 => 77,  181 => 71,  176 => 69,  171 => 67,  165 => 64,  160 => 62,  155 => 60,  150 => 58,  145 => 56,  139 => 53,  134 => 51,  128 => 47,  125 => 46,  121 => 44,  119 => 43,  116 => 42,  111 => 41,  107 => 40,  104 => 39,  102 => 38,  76 => 15,  73 => 14,  68 => 11,  66 => 10,  62 => 8,  58 => 7,  47 => 3,  36 => 1,);
+        return array (  195 => 84,  188 => 79,  182 => 78,  176 => 77,  170 => 73,  164 => 63,  159 => 61,  154 => 59,  149 => 57,  144 => 55,  138 => 52,  133 => 50,  127 => 46,  124 => 45,  120 => 43,  118 => 42,  115 => 41,  110 => 40,  106 => 39,  103 => 38,  101 => 37,  76 => 15,  73 => 14,  68 => 11,  66 => 10,  62 => 8,  58 => 7,  47 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
