@@ -38,6 +38,25 @@
                 </li>
             {% endif %}
         </ul>
+        
+        {# 新增 #}
+        {# 更改 user infomation 及 team infomation#}
+        <div id = "changeyeaminfo">
+            <a class="nav-link justify-content-center" href="{{ path('team_changeteaminfo') }}">
+                <button type="button" class="btn btn-info btn-sm">
+                    <i class="fas fa-info"></i> ChangeTeamInfo
+                </button>
+            </a>
+       </div>
+        <div id = "changeuserinfo">
+            <a class="nav-link justify-content-center" href="{{ path('team_changeuserinfo') }}">
+                <button type="button" class="btn btn-info btn-sm">
+                    <i class="fas fa-key"></i> ChangeUserInfo
+                </button>
+            </a>
+       </div>
+
+
 
         <div id="submitbut">
         {#-----CCU-----#} 
