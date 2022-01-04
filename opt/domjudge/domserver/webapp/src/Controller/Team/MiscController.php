@@ -38,6 +38,25 @@ use Doctrine\ORM\Query\Expr\Join;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use App\Form\Type\CompileType;
 use Symfony\Component\HttpFoundation\JsonResponse;
+
+use App\Form\Type\TeamType;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use App\Service\EventLogService;
+use Symfony\Component\Form\Extension\Core\Type\PasswordType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use App\Entity\User;
+use App\Entity\Role;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
+use Symfony\Component\Security\Core\Authentication\Token\UsernamePasswordToken;
+use Symfony\Component\HttpKernel\KernelInterface;
+use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
+use Symfony\Component\Security\Core\Validator\Constraints\UserPassword;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+use Symfony\Component\Security\Core\Validator\Constraints\UserPasswordValidator;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Form\FormEvent;
+use Symfony\Component\Form\FormEvents;
 /**
  * Class MiscController
  *
