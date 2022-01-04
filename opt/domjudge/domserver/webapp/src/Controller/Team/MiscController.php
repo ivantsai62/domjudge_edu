@@ -470,3 +470,110 @@ class MiscController extends BaseController
     }
 }
 /*-----CCU-----*/
+
+//新增user資訊更改
+//透過symfony annotation來新增路由資訊
+      /**
+     * @Route("/changeuserinfo", name="team_changeuserinfo")
+
+     */
+//在controller中新增改變user資訊的action
+    public function changeUserInfoAction(Request $request){
+//在使用者登入後取得目前使用者與隊伍相關的資訊
+        $user    = $this->dj->getUser();
+        $team    = $user->getTeam();
+        $teamId  = $team->getTeamid();
+         
+            if (!$team) {
+                throw new NotFoundHttpException(sprintf('Team with ID %s not found', $teamId));
+            }
+//利用symfony form 建立相關資訊
+//這裡利用了官方RepeatedType，來驗證使用者輸入的密碼是否兩次都相同
+
+            $form_passwd = $this->createFormBuilder($user)
+                ->add('plainPassword', RepeatedType::class, array(
+                        'type'              => PasswordType::class,
+                        'required'            => false,
+                        'first_options'     => array('label' => 'New password'),
+                        'second_options'    => array('label' => 'Confirm new password'),
+                        'invalid_message' => 'The password fields must match.',
+                        ))
+                ->add('save', SubmitType::class)
+                ->getForm();
+
+            $form_passwd->handleRequest($request);
+
+            if ($form_passwd->isSubmitted() && $form_passwd->isValid()) {
+                
+                  
+                
+                    $this->saveEntity($this->em, $this->eventLogService, $this->dj, $user,
+                                  $user->getUserid(),false);
+                    //透過內建的驗證器將密碼加密並儲存到資料庫
+                    //If we save the currently logged in used, update the login token
+                    if ($user->getUserid() === $this->dj->getUser()->getUserid()) {
+                        $token = new UsernamePasswordToken(
+                            $user,
+                            null,
+                            'main',
+                            $user->getRoles()
+                        );
+        
+                        $this->tokenStorage->setToken($token);
+                    }                               
+                
+                    return $this->redirect($this->generateUrl(
+                    'team_index'
+                ));
+            }
+// 將資料渲染至change_user_info.html前端頁面
+            return $this->render('team/partials/change_user_info.html.twig', [
+                'team' => $team,
+                'user' => $user,
+                'form_passwd' => $form_passwd->createView()
+            ]);
+    
+    }
+
+//新增team資訊更改
+//透過symfony annotation來新增路由資訊
+      /**
+     * @Route("/changeteaminfo", name="team_changeteaminfo")
+
+     */
+// 
+    public function changeTeamInfoAction(Request $request){
+//取得使用者以及隊伍相關資料
+        $user    = $this->dj->getUser();
+        $team    = $user->getTeam();
+        $teamId  = $team->getTeamid();
+        $contest = $this->dj->getCurrentContest($teamId);
+         
+            if (!$team) {
+                throw new NotFoundHttpException(sprintf('Team with ID %s not found', $teamId));
+            }
+//針對想要修改的屬性將其新增至表單中
+            $teaminfo_form = $this->createFormBuilder($team)
+                ->add('name', TextType::class)
+                ->add('save', SubmitType::class)
+                ->getForm();
+ 
+
+            $teaminfo_form->handleRequest($request);
+           
+            
+            if ($teaminfo_form->isSubmitted() && $teaminfo_form->isValid()) {
+                $this->saveEntity($this->em, $this->eventLogService, $this->dj, $team,
+                                  $team->getName(), false);                       
+                
+                    return $this->redirect($this->generateUrl(
+                    'team_index'
+                ));
+            }
+//將相關資料渲染至change_team_info此頁面中
+            return $this->render('team/partials/change_team_info.html.twig', [
+                'team' => $team,
+                'user' => $user,
+                'teaminfo_form' => $teaminfo_form->createView()
+            ]);
+    }
