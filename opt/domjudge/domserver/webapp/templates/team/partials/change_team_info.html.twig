@@ -1,0 +1,18 @@
+{% extends "team/base.html.twig" %}
+
+{% block title %}Contest problems - {{ parent() }}
+
+{% endblock %}
+
+{% block content %}
+
+{# 後端透過controller將teaminfo_form的資料傳遞給此頁面，透過twig form顯示form #}
+
+<div class="row">
+    <div class="col-lg-4">
+        {{form(teaminfo_form)}}
+     
+    </div>
+</div>
+
+{% endblock %}
