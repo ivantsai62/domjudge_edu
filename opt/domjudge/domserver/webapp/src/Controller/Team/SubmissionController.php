@@ -98,12 +98,14 @@ class SubmissionController extends BaseController
                 /** @var UploadedFile[] $files */
                 $files      = $form->get('code')->getData();
                 $files = array_values($files);
+                /*
                 dump($files[0]->getClientOriginalName());
                 dump($problem->getProbid());
                 dump($language);
                 dump(array_values($files));
                 dump(file_get_contents($files[0]->getRealPath()));
                 dump(md5('1'));
+                */
                 $testcaseContent = $this->em->createQueryBuilder()
                 ->from(TestcaseContent::class, 'tcc')
                 ->select('tcc')
@@ -114,9 +116,10 @@ class SubmissionController extends BaseController
                 ->getOneOrNullResult();
                 $contentint = $testcaseContent->getInput();
                 $contentout = $testcaseContent->getOutput();
+                /*
                 dump($contentint);
                 dump($contentout);
-                
+                */
                 if (!is_array($files)) {
                     $files = [$files];
                 }
