@@ -106,6 +106,7 @@ class SubmissionController extends BaseController
                 dump(file_get_contents($files[0]->getRealPath()));
                 dump(md5('1'));
                 */
+                /*
                 $testcaseContent = $this->em->createQueryBuilder()
                 ->from(TestcaseContent::class, 'tcc')
                 ->select('tcc')
@@ -116,6 +117,7 @@ class SubmissionController extends BaseController
                 ->getOneOrNullResult();
                 $contentint = $testcaseContent->getInput();
                 $contentout = $testcaseContent->getOutput();
+                */
                 /*
                 dump($contentint);
                 dump($contentout);
